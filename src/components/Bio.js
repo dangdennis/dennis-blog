@@ -32,6 +32,8 @@ const Bio = props => {
       <h1
         style={{
           marginBottom: rhythm(0.2),
+          letterSpacing: '-1px',
+          fontWeight: '700'
         }}
       >
         Dennis Dang

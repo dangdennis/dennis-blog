@@ -11,7 +11,10 @@ class Template extends React.Component {
 
     return (
       <React.Fragment>
-        <nav className="nav-list">
+        <nav className="nav-list"
+        style={{
+          marginBottom: rhythm(2)
+        }}>
           {location.pathname !== rootPath && (
             <Link className="nav-link" to="/">
               Home
