@@ -7,7 +7,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 
-class BlogIndex extends React.Component {
+class Index extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const siteDescription = get(
@@ -24,30 +24,55 @@ class BlogIndex extends React.Component {
           title={siteTitle}
         />
         <Bio />
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
+        <section aria-label="About" className="about">
+          <ul
+            className="list"
+            style={{
+              marginLeft: rhythm(0),
+            }}
+          >
+            <li className="list-item">
+              <h3 className="header">Trending Interests</h3>
+              <p className="details">Rust, blockchain, Python, and ReasonML</p>
+              <p>I like R&B and hip-hop too.</p>
+            </li>
+            <li className="list-item">
+              <h3 className="header">Work Experience</h3>
+              <ul>
+                <li>Kelley Blue Book</li>
+                <li>Experian</li>
+                <li>Q2 Solutions</li>
+              </ul>
+            </li>
+            <li className="list-item">
+              <h3 className="header">Writings and Blog </h3>
+              <p className="details">
+                Check out my <Link to="/blog">blog!</Link> [WIP]
+              </p>
+            </li>
+            <li className="list-item">
+              <h3 className="header">Tech Stack</h3>
+              <p>
+                Professional: Javascript, AWS, NodeJS, .NET, React, GraphQL, Typescript, CSS Flexbox &
+                Grid, AEM, jQuery
+              </p>
+              <p>Familiar: Python, C, C++, Java, Rust</p>
+            </li>
+            <li className="list-item">
+              <h3 className="header">Contact</h3>
+              <p className="details">
+                Find me on Twitter or email me{' '}
+                <a href="mailto:dang.dennis@gmail.com">here</a>.
+              </p>
+            </li>
+          </ul>
+        </section>
       </Layout>
     )
   }
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {
@@ -55,20 +80,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD MMMM, YYYY")
-            title
-          }
-        }
       }
     }
   }

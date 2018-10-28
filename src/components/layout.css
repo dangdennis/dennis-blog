@@ -1,0 +1,52 @@
+/* Nav */
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-link {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.nav-link.blog {
+  background: #419edadb;
+  border-radius: 3px;
+  text-align: center;
+  width: 60px;
+  transition: ease-out 0.15s;
+  color: #fff;
+}
+
+.nav-link.blog:hover {
+  background: #419eda;
+}
+
+/* About */
+
+.about {
+}
+
+.about .list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.about .list-item {
+  list-style: none;
+}
+
+.about .header {
+}
+
+.about .details {
+}

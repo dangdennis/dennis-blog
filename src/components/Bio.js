@@ -7,36 +7,47 @@ import 'typeface-merriweather'
 import profilePic from './profile-pic.jpg'
 import { rhythm } from '../utils/typography'
 
-class Bio extends React.Component {
-  render() {
-    return (
-      <div
+const Bio = props => {
+  return (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        marginBottom: rhythm(2.5),
+        textAlign: 'center'
+      }}
+    >
+      <img
+        src={profilePic}
+        alt={`Dennis Dang`}
         style={{
-          display: 'flex',
-          marginBottom: rhythm(2.5),
+          marginRight: rhythm(1 / 2),
+          marginBottom: 0,
+          width: rhythm(2),
+          height: rhythm(2),
+          borderRadius: '50%',
+        }}
+      />
+      <h1
+        style={{
+          marginBottom: rhythm(0.2),
         }}
       >
-        <img
-          src={profilePic}
-          alt={`Dennis Dang`}
-          style={{
-            marginRight: rhythm(1 / 2),
-            marginBottom: 0,
-            width: rhythm(2),
-            height: rhythm(2),
-            borderRadius: '50%',
-          }}
-        />
-        <p>
-          Written by <strong>Dennis Dang</strong> who lives and breathes dance,
-          code, and energy.{' '}
-          <a href="https://twitter.com/dangitdennis">
-            You should follow him on Twitter
-          </a>
-        </p>
-      </div>
-    )
-  }
+        Dennis Dang
+      </h1>
+      <h3
+        style={{
+          marginBottom: rhythm(0.1),
+        }}
+      >
+        Software Engineer
+      </h3>
+      <p style={{ lineHeight: '18px' }}>
+        Core: Javascript ecosystem
+      </p>
+    </div>
+  )
 }
 
 export default Bio
