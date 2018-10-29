@@ -6,7 +6,7 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 
 import profilePic from './profile-pic.jpg'
-import PirateFace from '../assets/pirate/man-piracy-pirate-sea-set.svg'
+import PirateIcon from '../assets/pirate/man-piracy-pirate-sea-set.svg'
 import { rhythm } from '../utils/typography'
 
 const Bio = props => {
@@ -39,7 +39,7 @@ const Bio = props => {
                   }}
                 />
               ) : (
-                <PirateFace
+                <PirateIcon
                   aria-label="Pirate Face"
                   onClick={toggleTheme}
                   style={{ width: '65px', cursor: 'pointer' }}
