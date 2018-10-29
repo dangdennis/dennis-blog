@@ -61,7 +61,7 @@ export default function About() {
               <div>
                 <h3>Writings and Blog </h3>
                 <p>
-                  Check out my <Link to="/blog">blog!</Link> [WIP]
+                  Check out my <Link to="/blog">blog!</Link>
                 </p>
               </div>
             </li>
@@ -85,8 +85,11 @@ export default function About() {
               <div>
                 <h3>Contact</h3>
                 <p>
-                  Find me on Twitter or email me{' '}
-                  <a href="mailto:dang.dennis@gmail.com">here</a>.
+                  Find me on{' '}
+                  <a href="https://twitter.com/dangitdennis" target="_blank">
+                    Twitter
+                  </a>{' '}
+                  or email me <a href="mailto:dang.dennis@gmail.com">here</a>.
                 </p>
               </div>
             </li>

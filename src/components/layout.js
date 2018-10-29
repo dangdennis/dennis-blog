@@ -1,8 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import './layout.css'
+import Nav from './Nav'
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm } from '../utils/typography'
 import ThemeContext from '../context/themeContext'
 
 class Template extends React.Component {
@@ -19,41 +19,12 @@ class Template extends React.Component {
   }
 
   render() {
-    const { location, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
+    const { children } = this.props
 
     return (
       <React.Fragment>
         <ThemeContext.Provider value={this.state}>
-          <nav
-            className="nav-list"
-            style={{
-              marginBottom: rhythm(2),
-            }}
-          >
-            {location.pathname !== rootPath && (
-              <Link className="nav-link" to="/">
-                Home
-              </Link>
-            )}
-            <a
-              className="nav-link"
-              href="https://twitter.com/dangitdennis"
-              target="_blank"
-            >
-              Twitter
-            </a>
-            <a
-              className="nav-link"
-              href="https://github.com/dangdennis"
-              target="_blank"
-            >
-              GitHub
-            </a>
-            <Link className="nav-link blog" to="/blog">
-              Blog
-            </Link>
-          </nav>
+          <Nav {...this.props} />
           <div
             style={{
               marginLeft: 'auto',
