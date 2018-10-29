@@ -4,8 +4,8 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Particles from 'react-particles-js'
 
-import Bio from '../components/Bio'
 import Layout from '../components/layout'
+import Bio from '../components/Bio'
 import About from '../components/About'
 import Footer from '../components/Footer'
 
