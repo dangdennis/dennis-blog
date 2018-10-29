@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import './layout.css'
 
 import { rhythm, scale } from '../utils/typography'
-import Footer from './Footer'
 import ThemeContext from '../context/themeContext'
 
 class Template extends React.Component {
@@ -65,7 +64,6 @@ class Template extends React.Component {
           >
             {children}
           </div>
-          <Footer />
         </ThemeContext.Provider>
       </React.Fragment>
     )
