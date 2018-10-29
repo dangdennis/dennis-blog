@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
+  <React.Fragment>
+    <h1>You hit a nonexistent page. Oops. </h1>
+    <h3>
+      Click to go <Link to="/">back</Link>
+    </h3>
+  </React.Fragment>
 )
 
 export default NotFoundPage
