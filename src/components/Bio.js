@@ -15,7 +15,7 @@ const Bio = props => {
         alignItems: 'center',
         flexDirection: 'column',
         marginBottom: rhythm(2.5),
-        textAlign: 'center'
+        textAlign: 'center',
       }}
     >
       <img
@@ -33,7 +33,8 @@ const Bio = props => {
         style={{
           marginBottom: rhythm(0.2),
           letterSpacing: '-1px',
-          fontWeight: '700'
+          fontWeight: '700',
+          color: 'hsla(0,0%,0%,0.83)',
         }}
       >
         Dennis Dang
@@ -41,13 +42,12 @@ const Bio = props => {
       <h3
         style={{
           marginBottom: rhythm(0.1),
+          color: 'hsla(0,0%,0%,0.78)',
         }}
       >
         Software Engineer
       </h3>
-      <p style={{ lineHeight: '18px' }}>
-        Core: Javascript ecosystem
-      </p>
+      <p style={{ lineHeight: '18px' }}>Core: Javascript ecosystem</p>
     </div>
   )
 }

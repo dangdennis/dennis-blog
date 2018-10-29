@@ -32,6 +32,7 @@
 /* About */
 
 .about {
+  /* min-width: 600px; */
 }
 
 .about .list {
@@ -42,11 +43,8 @@
 }
 
 .about .list-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 20px;
   list-style: none;
-}
-
-.about .header {
-}
-
-.about .details {
 }
