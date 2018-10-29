@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
+    title: 'Dennis Dang',
     author: 'Dennis Dang',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    description: 'My personal blog and portfolio',
+    siteUrl: 'https://dangdennis.com',
   },
   pathPrefix: '/gatsby-starter-blog',
   plugins: [
