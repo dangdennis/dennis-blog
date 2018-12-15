@@ -15,7 +15,7 @@ class Template extends React.Component {
   }
 
   state = {
-    theme: 'default',
+    theme: 'pirate', // Set state here 
     toggleTheme: this.toggleTheme,
   }
 
