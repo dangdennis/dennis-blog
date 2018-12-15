@@ -64,7 +64,7 @@ const Bio = props => {
             >
               Software Engineer
             </h3>
-            <p style={{ lineHeight: '18px' }}>Core: Javascript ecosystem</p>
+            <p style={{ lineHeight: '18px' }}>Core: Javascript</p>
           </div>
         )
       }}

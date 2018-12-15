@@ -36,7 +36,7 @@ export default function About() {
               <div>
                 <h3>Trending Interests</h3>
                 <p style={{ marginBottom: rhythm(0) }}>
-                  Rust, blockchain, Python, and ReasonML.
+                  Rust, serverless, blockchain, reasonml.
                 </p>
                 <p>I like music and dance as well.</p>
               </div>
@@ -89,7 +89,7 @@ export default function About() {
                   <a href="https://twitter.com/dangitdennis" target="_blank">
                     Twitter
                   </a>{' '}
-                  or email me <a href="mailto:dang.dennis@gmail.com">here</a>.
+                  or email me <a href="mailto:dang.dennis9@gmail.com">here</a>.
                 </p>
               </div>
             </li>
