@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { rhythm } from '../utils/typography'
 
-import ThemeContext, { themeContext } from '../context/themeContext'
+import ThemeContext from '../context/themeContext'
 
 // Default theme icons
 import LaptopIcon from '../assets/laptop.svg'
@@ -31,14 +31,28 @@ export default function About() {
           >
             <li className="list-item">
               <div className="icon">
+                {theme === 'default' ? <LaptopIcon /> : <WheelIcon />}
+              </div>
+              <div>
+                <h3 style={H3Style}>Writings and Blog </h3>
+                <p>
+                  Check out my <Link to="/blog">blog!</Link>
+                </p>
+              </div>
+            </li>
+            <li className="list-item">
+              <div className="icon">
                 {theme === 'default' ? <FlaskIcon /> : <OctopusIcon />}
               </div>
               <div>
-                <h3>Trending Interests</h3>
+                <h3 style={H3Style}>Trending Interests</h3>
                 <p style={{ marginBottom: rhythm(0) }}>
-                  Rust, serverless, blockchain, reasonml.
+                  Rust, go, blockchain, serverless, finate state machines.
                 </p>
-                <p>I like music and dance as well.</p>
+                <p>
+                  I used to consider myself a hip-hop dancer. But now I'm just a
+                  dancer and lover of the beats.
+                </p>
               </div>
             </li>
             <li className="list-item">
@@ -46,7 +60,7 @@ export default function About() {
                 {theme === 'default' ? <DiagramIcon /> : <DoubleSwordIcon />}
               </div>
               <div>
-                <h3>Work Experience</h3>
+                <h3 style={H3Style}>Work Experience</h3>
                 <ul>
                   <li>Kelley Blue Book</li>
                   <li>Experian</li>
@@ -56,26 +70,15 @@ export default function About() {
             </li>
             <li className="list-item">
               <div className="icon">
-                {theme === 'default' ? <LaptopIcon /> : <WheelIcon />}
-              </div>
-              <div>
-                <h3>Writings and Blog </h3>
-                <p>
-                  Check out my <Link to="/blog">blog!</Link>
-                </p>
-              </div>
-            </li>
-            <li className="list-item">
-              <div className="icon">
                 {theme === 'default' ? <ProjectIcon /> : <CannonIcon />}
               </div>
               <div>
-                <h3>Tech Stack</h3>
+                <h3 style={H3Style}>Tech Stack</h3>
                 <p>
                   Professional: Javascript, AWS, NodeJS, .NET, React, GraphQL,
                   Typescript, CSS Flexbox & Grid, AEM, jQuery
                 </p>
-                <p>Familiar: Python, C, C++, Java, Rust</p>
+                <p>Familiar: Python, C, C++, Java</p>
               </div>
             </li>
             <li className="list-item">
@@ -83,7 +86,7 @@ export default function About() {
                 {theme === 'default' ? <BinocularIcon /> : <BottleLetterIcon />}
               </div>
               <div>
-                <h3>Contact</h3>
+                <h3 style={H3Style}>Contact</h3>
                 <p>
                   Find me on{' '}
                   <a href="https://twitter.com/dangitdennis" target="_blank">
@@ -99,3 +102,5 @@ export default function About() {
     </ThemeContext.Consumer>
   )
 }
+
+const H3Style = { marginBottom: '0.5rem' }
