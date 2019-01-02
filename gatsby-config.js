@@ -20,6 +20,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-plugin-offline`,
           `gatsby-remark-reading-time`,
           {
             resolve: `gatsby-remark-images`,
