@@ -47,7 +47,7 @@ export default function About() {
               <div>
                 <h3 style={H3Style}>Trending Interests</h3>
                 <p style={{ marginBottom: rhythm(0) }}>
-                  Rust, go, blockchain, serverless, finate state machines.
+                  Rust, Go, blockchain, serverless, and finite state machines. Lol, who am I?
                 </p>
                 <p>
                   I used to consider myself a hip-hop dancer. But now I'm just a
