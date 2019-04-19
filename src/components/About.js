@@ -47,12 +47,9 @@ export default function About() {
               <div>
                 <h3 style={H3Style}>Trending Interests</h3>
                 <p style={{ marginBottom: rhythm(0) }}>
-                  Rust, Flutter, Go, blockchain, serverless.
+                  Ocaml + Reason, Go, Flutter, blockchain.
                 </p>
-                <p>
-                  I used to consider myself a hip-hop dancer. But now I'm just a
-                  dancer and lover of the beats.
-                </p>
+                <p>I'm just a dancer and I boogie to the beats, always.</p>
               </div>
             </li>
             <li className="list-item">
@@ -75,10 +72,11 @@ export default function About() {
               <div>
                 <h3 style={H3Style}>Tech Stack</h3>
                 <p>
-                  Professional: Javascript, AWS, NodeJS, .NET, React, GraphQL,
-                  Typescript, CSS Flexbox & Grid, AEM, jQuery
+                  Professional: Javascript, AWS, Node, .NET, React, GraphQL,
+                  Typescript, CSS Flexbox & Grid
                 </p>
                 <p>Familiar: Python, C, C++, Java</p>
+                <p>Learning: Rust, cloud infrastructure, mobile development</p>
               </div>
             </li>
             <li className="list-item">
