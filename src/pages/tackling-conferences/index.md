@@ -1,3 +1,8 @@
+---
+title: Tackling Conferences and Networking
+date: '2019-03-24'
+---
+
 # Tackling Conferences and Networking
 
 Hello everyone! I'm a UI Engineer at Kelley Blue Book. I've been a professional developer for about 1.5 years, and I learned what a boolean was in 2016 (haha). I hope my own experience from [GraphQL Summit 2018](https://summit.graphql.com/2018/) can spark your desire to attend tech conferences!

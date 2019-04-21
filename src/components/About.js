@@ -49,7 +49,7 @@ export default function About() {
                 <p style={{ marginBottom: rhythm(0) }}>
                   Ocaml + Reason, Go, Flutter, blockchain.
                 </p>
-                <p>I'm just a dancer and I boogie to the beats, always.</p>
+                <p>Urban hip-hop dance, politics, podcasts. </p>
               </div>
             </li>
             <li className="list-item">
