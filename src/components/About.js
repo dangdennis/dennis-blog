@@ -47,7 +47,7 @@ export default function About() {
               <div>
                 <h3 style={H3Style}>Trending Interests</h3>
                 <p style={{ marginBottom: rhythm(0) }}>
-                  Ocaml + Reason, Go, Flutter, blockchain.
+                  Ocaml + Reason, Go, blockchain.
                 </p>
                 <p>Urban hip-hop dance, politics, podcasts. </p>
               </div>
@@ -76,7 +76,7 @@ export default function About() {
                   Typescript, CSS Flexbox & Grid
                 </p>
                 <p>Familiar: Python, C, C++, Java</p>
-                <p>Learning: Rust, cloud infrastructure, mobile development</p>
+                {/* <p>Learning: Blockchain, Rust, cloud infrastructure, mobile development</p> */}
               </div>
             </li>
             <li className="list-item">
